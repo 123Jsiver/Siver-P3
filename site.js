@@ -41,6 +41,26 @@ const vue_app = Vue.createApp({
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            getMonthText(dateArray){
+            
+            },
+            posterClick(index){
+            let x = movies[index].posterIndex;
+            let y = movies[index].posters.length;
+
+            console.log(x);
+            console.log(y);
+            if(x <  y) {
+                  movies[index].posterIndex++;
+            }
+            else {
+                  movies[index].posterIndex = 0;
+            }
+            },
+            timeText(minutes){
+                  Math.trunc(x);
+                  
+            }
       }
 })
 vue_app.mount("#vue_app")
