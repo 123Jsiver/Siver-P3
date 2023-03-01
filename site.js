@@ -42,25 +42,64 @@ const vue_app = Vue.createApp({
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
             getMonthText(dateArray){
-            
+                  switch(dateArray[1]) {
+                        case 0:
+                        return "January" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 1:
+                        return "Febuary" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 2:
+                        return "March" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 3:
+                        return "April" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 4:
+                        return "May" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 5:
+                        return "June" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 6:
+                        return "July" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 7:
+                        return "August" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 8:
+                        return "September" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 9:
+                        return "October" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 10:
+                        return "November" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 11:
+                        return "December"+" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        default:
+                        return "Error";
+                        break;
+                  }
             },
             posterClick(index){
-            let x = movies[index].posterIndex;
-            let y = movies[index].posters.length;
-
-            console.log(x);
-            console.log(y);
-            if(x <  y) {
-                  movies[index].posterIndex++;
+            let x = this.movies[index].posterindex;
+            let y = this.movies[index].posters.length;
+            if(x <  y-1) {
+                  this.movies[index].posterindex++;
             }
             else {
-                  movies[index].posterIndex = 0;
+                  this.movies[index].posterindex = 0;
             }
             },
             timeText(minutes){
-                  Math.trunc(x);
-                  
-            }
+                  var hours = Math.trunc(minutes/60);
+                  var min = minutes % 60;
+                  return hours + "h" + min + "m"
+            },
+            
       }
 })
 vue_app.mount("#vue_app")
