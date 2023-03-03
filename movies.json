@@ -68,5 +68,47 @@
             "likes": 812,
             "dislikes": 101,
             "posterindex": 0
+      },
+      {
+            "title": "Ant-Man",
+            "iscore": 7.3,
+            "rating": "PG-13",
+            "runtime": 117,
+            "released": [2015, 6, 29],
+            "country": "USA",
+            "posters": ["img/Antman1.jpg", "img/Antman2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0478970/",
+            "website": "https://www.rottentomatoes.com/m/antman",
+            "likes": 1062,
+            "dislikes": 200,
+            "posterindex": 0
+      },
+      {
+            "title": "Spaceballs",
+            "iscore": 7.1,
+            "rating": "PG",
+            "runtime": 96,
+            "released": [1987, 6, 24],
+            "country": "USA",
+            "posters": ["img/Spaceballs1.jpg", "img/Spaceballs2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0094012/",
+            "website": "https://www.rottentomatoes.com/m/spaceballs",
+            "likes": 2068,
+            "dislikes": 135,
+            "posterindex": 0
+      },
+      {
+            "title": "Men In Black",
+            "iscore": 7.3,
+            "rating": "PG-13",
+            "runtime": 98,
+            "released": [1997, 6, 25],
+            "country": "USA",
+            "posters": ["img/Men In Black1.jpg", "img/Men In Black2.jpg"],
+            "imdb": "https://www.imdb.com/title/tt0119654/",
+            "website": "https://www.rottentomatoes.com/m/men_in_black",
+            "likes": 1456,
+            "dislikes": 156,
+            "posterindex": 0
       }
 ]
