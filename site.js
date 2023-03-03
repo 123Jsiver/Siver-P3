@@ -44,39 +44,42 @@ const vue_app = Vue.createApp({
             getMonthText(dateArray){
                   switch(dateArray[1]) {
                         case 0:
-                        return "January" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "Error";
                         break;
                         case 1:
-                        return "Febuary" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "January" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 2:
-                        return "March" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "Febuary" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 3:
-                        return "April" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "March" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 4:
-                        return "May" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "April" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 5:
-                        return "June" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "May" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 6:
-                        return "July" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "June" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 7:
-                        return "August" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "July" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 8:
-                        return "September" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "August" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 9:
-                        return "October" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "September" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 10:
-                        return "November" +" "+ dateArray[2]+", " + dateArray[0];
+                        return "October" +" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         case 11:
+                        return "November" +" "+ dateArray[2]+", " + dateArray[0];
+                        break;
+                        case 12:
                         return "December"+" "+ dateArray[2]+", " + dateArray[0];
                         break;
                         default:
